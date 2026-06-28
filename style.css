@@ -57,6 +57,35 @@ body {
     color: var(--text);
 }
 
+.command-search{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:18px;
+    align-items:center;
+}
+.command-search input{
+    flex:1;
+    min-width:220px;
+    padding:12px 14px;
+    border:1px solid var(--border);
+    border-radius:12px;
+}
+.command-search span{
+    color: var(--muted);
+}
+.copy-btn{
+    margin-top:14px;
+    padding:8px 12px;
+    border:none;
+    border-radius:10px;
+    background: var(--accent);
+    color:#fff;
+    cursor:pointer;
+}
+.copy-btn:hover{
+    background:#1d4ed8;
+}
 .section p,
 .section li {
     color: var(--muted);
