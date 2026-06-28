@@ -37,38 +37,50 @@
 
         <section class="section">
             <h2>Basic Git Commands</h2>
+            <div class="command-search">
+                <input id="commandSearch" type="search" placeholder="Search commands...">
+                <span>Filter commands and copy the text in one click.</span>
+            </div>
             <div class="command-grid">
-                <div class="command-card">
+                <div class="command-card" data-command="git init">
                     <h3>git init</h3>
                     <p>Create a new Git repository in the current folder.</p>
+                    <button class="copy-btn" type="button">Copy</button>
                 </div>
-                <div class="command-card">
+                <div class="command-card" data-command="git clone <url>">
                     <h3>git clone</h3>
                     <p>Copy an existing remote repository to your local machine.</p>
+                    <button class="copy-btn" type="button">Copy</button>
                 </div>
-                <div class="command-card">
+                <div class="command-card" data-command="git status">
                     <h3>git status</h3>
                     <p>Show the current state of the working directory and staging area.</p>
+                    <button class="copy-btn" type="button">Copy</button>
                 </div>
-                <div class="command-card">
+                <div class="command-card" data-command="git add .">
                     <h3>git add</h3>
                     <p>Stage changes so they can be included in the next commit.</p>
+                    <button class="copy-btn" type="button">Copy</button>
                 </div>
-                <div class="command-card">
+                <div class="command-card" data-command="git commit -m \"message\"">
                     <h3>git commit</h3>
                     <p>Save staged changes to the local repository history.</p>
+                    <button class="copy-btn" type="button">Copy</button>
                 </div>
-                <div class="command-card">
+                <div class="command-card" data-command="git push">
                     <h3>git push</h3>
                     <p>Send committed changes from your local repository to a remote repository.</p>
+                    <button class="copy-btn" type="button">Copy</button>
                 </div>
-                <div class="command-card">
+                <div class="command-card" data-command="git pull">
                     <h3>git pull</h3>
                     <p>Fetch and merge changes from a remote repository into your local branch.</p>
+                    <button class="copy-btn" type="button">Copy</button>
                 </div>
-                <div class="command-card">
+                <div class="command-card" data-command="git branch">
                     <h3>git branch</h3>
                     <p>List, create, or delete branches in your repository.</p>
+                    <button class="copy-btn" type="button">Copy</button>
                 </div>
             </div>
         </section>
@@ -121,5 +133,6 @@
             </div>
         </section>
     </div>
+    <script src="new.js"></script>
 </body>
 </html>
